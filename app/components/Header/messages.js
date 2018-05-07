@@ -19,8 +19,4 @@ export default defineMessages({
     defaultMessage: "Survey",
   },
 
-  test: {
-    id: 'boilerplate.components.Header.test',
-    defaultMessage: "Test",
-  }
 });

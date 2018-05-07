@@ -17,7 +17,6 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Survey from 'containers/Survey/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import Test from 'containers/Test/Loadable';
 
 
 const AppWrapper = styled.div`
@@ -43,7 +42,6 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
         <Route path="/survey" component={Survey} />
-        <Route path="/test" component={Test} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />
