@@ -16,7 +16,11 @@ export default defineMessages({
   },
   survey: {
     id: 'boilerplate.components.Header.survey',
-    defaultMessage: "Survey",
+    defaultMessage: "Login",
   },
-
+  surveypage: {
+    id: 'boilerplate.components.Header.surveypage',
+    defaultMessage: "SurveyPage",
+  },
+  
 });

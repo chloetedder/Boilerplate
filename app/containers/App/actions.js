@@ -19,6 +19,9 @@ import {
   LOAD_REPOS,
   LOAD_REPOS_SUCCESS,
   LOAD_REPOS_ERROR,
+  LOAD_SURVEY,
+  LOAD_SURVEY_SUCCESS,
+  LOAD_SURVEY_ERROR,
 } from './constants';
 
 /**
@@ -58,6 +61,30 @@ export function reposLoaded(repos, username) {
 export function repoLoadingError(error) {
   return {
     type: LOAD_REPOS_ERROR,
+    error,
+  };
+}
+
+export function loadSurvey() {
+  return {
+    type: LOAD_SURVEY,
+  };
+}
+
+export function surveyLoaded(age, color, food, mississippi, dog) {
+  return {
+    type: LOAD_SURVEY_SUCCESS,
+    age,
+    color,
+    food,
+    mississippi,
+    dog
+  };
+}
+
+export function surveyLoadingError(error) {
+  return {
+    type: LOAD_SURVEY_ERROR,
     error,
   };
 }

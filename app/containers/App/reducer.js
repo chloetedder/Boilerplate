@@ -16,6 +16,9 @@ import {
   LOAD_REPOS_SUCCESS,
   LOAD_REPOS,
   LOAD_REPOS_ERROR,
+  LOAD_SURVEY,
+  LOAD_SURVEY_ERROR,
+  LOAD_SURVEY_SUCCESS,
 } from './constants';
 
 // The initial state of the App
@@ -43,6 +46,18 @@ function appReducer(state = initialState, action) {
     case LOAD_REPOS_ERROR:
       return state
         .set('error', action.error)
+        .set('loading', false);
+    case LOAD_SURVEY:
+      return state
+        .set('loading', true)
+        .set('error', false)
+        .setIn(['userData', 'repositories'], false);
+    case LOAD_SURVEY_ERROR:
+      return state
+        .set('error', action.error)
+        .set('loading', false);
+    case LOAD_SURVEY_SUCCESS:
+      return state
         .set('loading', false);
     default:
       return state;

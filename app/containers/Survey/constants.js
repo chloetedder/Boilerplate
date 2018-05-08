@@ -4,3 +4,5 @@ export const SUBMIT_LOGIN = 'boilerplate/Home/SUBMIT_LOGIN';
 //response from the server
 export const LOGIN_SUCCESS = 'boilerplate/Home/LOGIN_SUCCESS';
 export const LOGIN_FAILURE = 'boilerplate/Home/LOGIN_FAILURE';
+
+
